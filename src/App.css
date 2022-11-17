@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.app > section {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(189, 189, 189);
+}
+
+.h {
+  width: 100%;
+}
+
+.h > h2 {
+  text-align: center;
+  height: fit-content;
+  color: rgb(49, 49, 49);
+}
+
+.h p {
+  text-align: center;
+  color: rgb(49, 49, 49);
+}
+
+.app__main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(56, 56, 56);
+}
+
+.app__mainAside {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: rgb(219, 219, 219);
+}
+
+.app__mainAside::-webkit-scrollbar {
+  display: none;
+}
+
+.app__mainAside > nav {
+  /* flex: 1; */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(189, 189, 189);
+}
+
+.app__mainAside > h3 {
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: rgb(49, 49, 49);
+}
+
+.app__mainBody {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  background-color: transparent;
+}
+
+.default {
+  display: grid;
+  place-items: center;
+}
+
+.default > div {
+  text-align: center;
+}
+
+.default h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: rgb(49, 49, 49);
+}
+
+.app__mainBody > * {
+  background-color: #f5f5f5;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100% !important;
+}

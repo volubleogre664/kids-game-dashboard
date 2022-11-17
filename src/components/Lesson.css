@@ -1,0 +1,30 @@
+.lesson {
+  all: unset;
+  background-color: transparent;
+  background-color: rgb(228, 228, 228);
+}
+
+.lesson > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.lesson > div > h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.lesson__modules > li {
+  padding: 5px 13px;
+  list-style: none;
+  cursor: pointer;
+  background-color: rgb(206, 206, 206);
+}
+
+.lesson__modules > li:hover {
+  background-color: rgb(196, 196, 196);
+}

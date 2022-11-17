@@ -1,0 +1,27 @@
+.tile {
+  /* display: inline-block; */
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* margin: 10px; */
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.tile__header h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgb(49, 49, 49);
+}
+
+.tile__header p {
+  margin-top: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: rgb(49, 49, 49);
+}
