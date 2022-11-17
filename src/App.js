@@ -75,6 +75,12 @@ function App() {
                 onClick={() => setLessons("quiz")}
               />
 
+              <Lesson
+                lessonName="Simulator"
+                modules={["Learning Simulator"]}
+                onClick={() => urlRef.current.click()}
+              />
+
               <a
                 style={{ display: "none" }}
                 ref={urlRef}
@@ -82,18 +88,6 @@ function App() {
               >
                 Leaning Simulator
               </a>
-
-              <Lesson
-                lessonName="Simulator"
-                modules={["Learning Simulator"]}
-                onClick={() => urlRef.current.click()}
-              />
-
-              {/* <Lesson
-                lessonName="Memory"
-                modules={["Animal Pictures", "People Pictures"]}
-                onClick={() => setLessons("default")}
-              /> */}
             </nav>
           </aside>
 
