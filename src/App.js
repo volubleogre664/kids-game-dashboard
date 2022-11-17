@@ -77,7 +77,7 @@ function App() {
 
               <Lesson
                 lessonName="Simulator"
-                modules={["Learning Simulator"]}
+                modules={[]}
                 onClick={() => urlRef.current.click()}
               />
 
