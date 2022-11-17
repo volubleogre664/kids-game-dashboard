@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import Header from "./components/Header";
 import Lesson from "./components/Lesson";
@@ -9,6 +9,7 @@ import Quiz from "./components/Quiz";
 
 function App() {
   const [lessons, setLessons] = useState("default");
+  const urlRef = useRef();
 
   const getPage = (_lesson) => {
     switch (_lesson) {
@@ -74,11 +75,25 @@ function App() {
                 onClick={() => setLessons("quiz")}
               />
 
+              <a
+                style={{ display: "none" }}
+                ref={urlRef}
+                href="http://localhost:3000/drag/init.html"
+              >
+                Leaning Simulator
+              </a>
+
               <Lesson
+                lessonName="Simulator"
+                modules={["Learning Simulator"]}
+                onClick={() => urlRef.current.click()}
+              />
+
+              {/* <Lesson
                 lessonName="Memory"
                 modules={["Animal Pictures", "People Pictures"]}
                 onClick={() => setLessons("default")}
-              />
+              /> */}
             </nav>
           </aside>
 
